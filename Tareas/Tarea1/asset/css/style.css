@@ -1,0 +1,18 @@
+.navbar{
+	background-color: #e74c3c;
+}
+.navbar-default .navbar-brand{
+	color: #ecf0f1;
+}
+.page-title, .table{
+	margin-bottom: 50px;
+}
+.volver{
+	margin-top: 20px;
+}
+th{
+	font-size: 18px;
+}
+i{
+	padding-right: 5px;
+}
