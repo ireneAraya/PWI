@@ -2,22 +2,25 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Canvas Game</title>
+	<title>SVG Game</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body onload="drawGameSVG()">
 	<section id="game">
-		<canvas id="gameBoard" width="300" height="300">
-					Canvas not working...
-		</canvas>
-		
 		<button id="btnStart">Inicio</button>
-		<button	id="btnPause">Pausa</button>
+		<button	id="btnDifficult">Difficult</button>
+		<!-- Create the SVG pane. -->
+    	<svg xmlns="http://www.w3.org/2000/svg" height="300" width="300">
+      		<!-- Create the board. -->
+      		<rect x="1" y="1" width="300" height="300" fill="#8CD6DF" id="bpard" />
+      		<!-- Create the ball. -->
+      		<circle cx="150" cy="150" r="15" fill="#F44336" id="ball" />
+      		<!-- Create the paddle. -->
+      		<rect x="150" y="290" width="150" height="10" fill="#3F51B5" id="paddle"/>
+    	</svg>
 		<p id="message"></p>
 	</section>
 
-	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script src="js/app.js"></script>
 </body>
 </html>

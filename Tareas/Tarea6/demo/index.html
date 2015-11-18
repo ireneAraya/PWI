@@ -2,18 +2,58 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Dashboard</title>
 	<script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+	<script src="../../jquery/dist/jquery.min.js"></script>
+	<script src="../../jquery-ui/jquery-ui.min.js"></script>
+
+	<link rel="stylesheet" href="../../bootstrap/dist/css/bootstrap.min.css">
+	<link rel="import" href="../pwi-panel.html">
 	<link rel="import" href="../pwi-dashboard.html">
+
+	<script>
+		$(function() {
+			$( ".panel" ).sortable({ revert: true
+    		});
+
+    		$( ".panel" ).draggable;
+    		});
+    	});
+	</script>
 </head>
 <body>
   <pwi-dashboard>
     <pwi-panel>
-      <hi>Hola mundo</hi>
-      <p>Hola esto es cualquier contenido html</p>
+      	<div class="panel-heading">
+			<h3 class="panel-title">Chart 1</h3>
+		</div>
+		<div class="panel-body">
+			<p>content</p>
+		</div>
     </pwi-panel>
     <pwi-panel>
-      <img src="cat.png"/>
+      	<div class="panel-heading">
+			<h3 class="panel-title">Chart 2</h3>
+		</div>
+		<div class="panel-body">
+			<p>content</p>
+		</div>
+    </pwi-panel>
+    <pwi-panel>
+      	<div class="panel-heading">
+			<h3 class="panel-title">Chart 3</h3>
+		</div>
+		<div class="panel-body">
+			<p>content</p>
+		</div>
+    </pwi-panel>
+    <pwi-panel>
+      	<div class="panel-heading">
+			<h3 class="panel-title">Chart 4</h3>
+		</div>
+		<div class="panel-body">
+			<p>content</p>
+		</div>
     </pwi-panel>
   </pwi-dashboard>
 </body>
