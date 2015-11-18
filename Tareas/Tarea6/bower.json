@@ -1,0 +1,28 @@
+{
+  "name": "Tarea6",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ireneAraya/PWI",
+  "authors": [
+    "Irene Araya <iarayal>"
+  ],
+  "description": "polymer",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "polymer",
+    "jquery",
+    "ui"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "polymer": "~1.2.3"
+  }
+}

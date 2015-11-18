@@ -1,0 +1,41 @@
+{
+  "name": "pwi-localdom",
+  "version": "0.0.1",
+  "authors": [
+    "Irene Araya <iarayal>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "polymer",
+    "dom",
+    "control",
+    "demo"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/ireneAraya/pwi-localdom",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "~1.2.1"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#~1.0.9"
+  },
+  "_release": "0.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.1",
+    "commit": "844bd869f7499d6a42b9a64f8e6e2005ad2634b9"
+  },
+  "_source": "git://github.com/ireneAraya/pwi-localdom.git",
+  "_target": "~0.0.1",
+  "_originalSource": "ireneAraya/pwi-localdom",
+  "_direct": true
+}
