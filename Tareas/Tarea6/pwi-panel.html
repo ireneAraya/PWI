@@ -1,17 +1,15 @@
 <link rel="import" href="../polymer/polymer.html">
-<link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="jquery-ui.css">
+<link rel="stylesheet" href="..bower_components/bootstrap/dist/css/bootstrap.min.css">
 
-<script src="jquery-1.10.2.js"></script>
-<script src="jquery-ui.js"></script>
-<script type="text/javascript" src="bootstrap.min.js"></script>
+<script src="..bower_components/jquery/dist/jquery-1.10.2.js"></script>
+<script src="..bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
 <dom-module id="pwi-panel">
 
 	<template>
 		<div class="col-sm-2">
-			<div class="panel panel-primary">
-				
+			<div class="panel panel-primary" >
+				<content select="*"></content>
 			</div>
 		</div>	
 	</template>
