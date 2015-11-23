@@ -1,0 +1,97 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../pwi-save/pwi-save.html">
+
+<script src="../jquery/dist/jquery.min.js"></script>
+
+<style>
+	.cf:before, .cf:after{
+  		content: '';
+		display: table;
+	}
+	.cf:after{
+  		clear: both;
+	}
+	.image-panel{
+		width:450px;
+		height:450px;
+		background-color: rgba(52, 152, 219, 1.0);
+	}
+	.panel-heading{
+		padding: 10px;
+		background-color: rgba(252, 252, 252,0.4);
+	}
+	.dashline{
+		float: right;
+	}
+	.hidden{
+		display : none;
+	}
+	.image{
+		max-width: 300px;
+		max-height: 300px;
+		display: table;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+
+	.txtInput{
+		width: 300px;
+		display: table;
+		margin: 0 auto;
+		margin-top: 100px;
+		border: solid 1px #8e44ad;
+		border-radius: 5px;
+		padding: 10px;
+		
+		color: #2c3e50;
+	}
+
+	.btnSave{
+		position: relative;
+		left: 260px;
+		top: 80px;
+		background-color: transparent;
+		border: none;
+	}
+
+</style>
+
+<dom-module id="pwi-image">
+	
+	<template>
+		<div class="image-panel">
+			<div class="panel-heading cf">
+				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve" class="dashline">
+					<polygon fill="#894B9D" points="30,30 20.878,30 0,0 9.123,0 "/>
+				</svg>
+			</div>
+			<div class="panel-body cf">
+				<figure id="imageCont" class="hidden">
+					<img src="" alt="your image" id="imageUpl" class="image">
+				</figure>
+				<div class="addImageGroup">
+					<input type="text" placeholder="http://" class="txtInput" id="txtImageUrl">
+					<button class="btnSave" id="btnSaveImage"><pwi-save></pwi-save></button>
+				</div>
+			</div>
+		</div>
+	</template>
+
+	<script>
+		Polymer({
+			is: 'pwi-image'
+		});
+		
+		$('document').ready(function() {
+			$('#btnSaveImage').click(function() {
+				var newScr = $('#txtImageUrl').val();
+				$('#imageUpl').attr('src', newScr);
+				
+				$('#imageCont').removeClass('hidden');
+				$('.addImageGroup').addClass('hidden');
+			});
+		});
+
+		
+	</script>
+</dom-module>

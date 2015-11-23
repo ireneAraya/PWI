@@ -1,0 +1,32 @@
+{
+  "name": "pwi-save",
+  "version": "0.0.1",
+  "authors": [
+    "Irene Araya <iarayal>"
+  ],
+  "description": "save image",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "polymer"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/ireneAraya/pwi-save",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "0.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.1",
+    "commit": "244e32deaa9f6f89b7892c8f266042203477c35c"
+  },
+  "_source": "git://github.com/ireneAraya/pwi-save.git",
+  "_target": "~0.0.1",
+  "_originalSource": "ireneAraya/pwi-save",
+  "_direct": true
+}

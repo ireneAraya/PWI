@@ -1,0 +1,25 @@
+{
+  "name": "pwi-image",
+  "version": "0.0.0",
+  "authors": [
+    "Irene Araya <iarayal>"
+  ],
+  "description": "image upload",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "polymer"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "pwi-save": "ireneAraya/pwi-save#~0.0.1"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "pwi-save",
+  "version": "0.0.0",
+  "authors": [
+    "Irene Araya <iarayal>"
+  ],
+  "description": "save image",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "polymer"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
