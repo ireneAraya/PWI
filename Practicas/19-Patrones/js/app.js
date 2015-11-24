@@ -3,7 +3,7 @@ app.config(['$routeProvider', function($routeProvider) {
 	$routeProvider
 
 	.when('/', {
-		templateUrl: 'index.html'
+		templateUrl: 'views/home.html'
 	})
 	.when('/categorias', {
 		templateUrl: 'views/categorias.html'

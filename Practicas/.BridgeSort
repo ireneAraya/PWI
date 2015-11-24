@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<dirinfo>
+<files>
+<item key='01-Angular20150914185922' />
+<item key='02-Navigation20150921182206' />
+<item key='03-Controllers20150923181557' />
+<item key='04-Bootstrap20150923201554' />
+<item key='06-PolymerControls20150928202708' />
+<item key='07-Viewports20150930183017' />
+<item key='08-CustomPolymerControls20151005195851' />
+<item key='09-07_Clase120150907180927' />
+<item key='09-10-JQueryUI20151007182636' />
+<item key='11-SVG20151014183259' />
+<item key='12-Canvas20151014192151' />
+<item key='13-CanvasGame20151020170947' />
+<item key='15-AngularFire20151019183648' />
+<item key='16-ServicesFactories20151021183346' />
+<item key='17-ReusablePolymerControls20151026185513' />
+<item key='18-PracticaExamen20151116194330' />
+<item key='19-Patrones20151119201833' />
+<item key='20-ionic20151123190722' />
+</files>
+</dirinfo>
