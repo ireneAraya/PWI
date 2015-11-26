@@ -1,0 +1,51 @@
+<div class="row">
+	<div class="col-sm-12 heading">
+		<h4><a href="" ng-click="provincias=!provincias">Provincias</a></h4>
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-12" ng-init="provincias=false" ng-show="provincias">
+		<div class="col-sm-3 provincias">
+			<ul class="list-unstyled">
+				<li class="p"><a href="" ng-click="sanJose=!sanJose">San José</a></li>
+				<li class="p"><a href="" ng-click="heredia=!heredia">Heredia</a></li>
+			</ul>
+		</div>
+		<div class="col-sm-3 cantones">
+			<div ng-init="sanJose=false" ng-show="sanJose">
+				<ul class="list-unstyled p1">
+					<li class="c"><a href="" ng-click="escazu=!escazu">Escazú</a></li>
+					<li class="c"><a href="" ng-click="santaAna=!santaAna">Santa Ana</a></li>
+				</ul>
+			</div>	
+			<div ng-init="heredia=false" ng-show="heredia">
+				<ul class="list-unstyled p2">
+					<li class="c"><a href="" ng-click="santoDomingo=!santoDomingo">Santo Domingo</a></li>
+					<li class="c"><a href="" ng-click="sanPablo=!sanPablo">San Pablo</a></li>
+				</ul>
+			</div>	
+		</div>
+		<div class="col-sm-3 distritos">
+			<div>
+				<ul class="list-unstyled" ng-init="escazu=false" ng-show="escazu">	
+					<li class="d">San Rafael</li>
+					<li class="d">San Antonio</li>
+				</ul>
+				<ul class="list-unstyled" ng-init="santaAna=false" ng-show="santaAna">
+					<li class="d">Pozos</li>
+					<li class="d">Piedades</li>
+				</ul>
+			</div>	
+			<div class="d2">
+				<ul class="list-unstyled" ng-init="santoDomingo=false" ng-show="santoDomingo">
+					<li class="d">San Vicente</li>
+					<li class="d">San Miguel</li>
+				</ul>
+				<ul class="list-unstyled" ng-init="sanPablo=false" ng-show="sanPablo">
+					<li class="d">San Pablo</li>
+					<li class="d">Rincón</li>
+				</ul>
+			</div>	
+		</div>
+	</div>
+</div>

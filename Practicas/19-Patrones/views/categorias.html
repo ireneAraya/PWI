@@ -1,28 +1,28 @@
 <div class="row">
-	<div class="col-sm-12">
-		<div class="panel panel-primary">
+	<div class="col-sm-3">
+		<div class="panel panel">
 			<div class="panel-heading">
 				<h3 class="panel-title">Categorías</h3>
 			</div>
 			<div class="panel-body">
-				<ul>
-					<li>
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Frutas</a>
-						<ul class="dropdown-menu">
+				<ul class="list-unstyled">
+					<li class="categoria green-background-lite">
+						<a href="" ng-click="frutas=!frutas">Frutas</a>
+						<ul ng-init="frutas=false" ng-show="frutas" class="list-unstyled nombre-categoria">
 							<li>Banano</li>
 							<li>Manzana</li>
 						</ul>
 					</li>
-					<li>
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tubérculos</a>
-						<ul class="dropdown-menu">
+					<li class="categoria green-background">
+						<a href="" ng-click="tuberculos=!tuberculos">Tubérculos</a>
+						<ul ng-init="tuberculos=false" ng-show="tuberculos" class="list-unstyled nombre-categoria">
 							<li>Chufa</li>
 							<li>Tiquisque</li>
 						</ul>
 					</li>
-					<li>
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Verduras</a>
-						<ul class="dropdown-menu">
+					<li class="categoria green-background-lite">
+						<a href="" ng-click="verduras=!verduras">Verduras</a>
+						<ul ng-init="verduras=false" ng-show="verduras" class="list-unstyled nombre-categoria">
 							<li>Pepino</li>
 							<li>Chayote</li>
 						</ul>
