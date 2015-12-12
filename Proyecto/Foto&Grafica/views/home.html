@@ -1,0 +1,51 @@
+<div class="row slider-container" ng-controller="HomeController">
+	<div class="col-xs-7 no-padding">
+		<ul class="pull-right">
+			<li class="slide left-slide">
+				<a href="#/design" ng-mouseenter="Design=false" ng-mouseleave="Design=true" class="design-slider">
+					<simple-slider style="width: 410px; height: 420px;" ng-show='Design'>
+						<img src="img/ardilla1.jpg" class="img-responsive">
+						<img src="img/emma1.jpg" class="img-responsive">
+					</simple-slider>
+					<span class="overlay text-center">Diseño</span>
+				</a>
+			</li>
+			<li class="slide left-slide">
+				<a href="#/photo">
+					<simple-slider style="width: 410px; height: 255px;">
+						<img src="img/ardilla2.jpg">
+						<img src="img/emma2.jpg">
+					</simple-slider>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="col-xs-5 no-padding">
+		<ul>
+			<li class="slide">
+				<a href="#/contact">
+					<simple-slider style="width: 265px; height: 170px;">
+						<img src="img/ardilla3.jpg">
+						<img src="img/emma3.jpg">
+					</simple-slider>
+				</a>
+			</li>
+			<li class="slide">
+				<a href="#/blog">
+					<simple-slider style="width: 265px; height: 315px;">
+						<img src="img/ardilla4.jpg">
+						<img src="img/emma4.jpg">
+					</simple-slider>
+				</a>
+			</li>
+			<li class="slide">
+				<a href="#/store">
+					<simple-slider style="width: 265px; height: 165px;">
+						<img src="img/ardilla5.jpg">
+						<img src="img/emma5.jpg">
+					</simple-slider>
+				</a>
+			</li>
+		</ul>
+	</div>	
+</div>

@@ -1,5 +1,18 @@
 angular.module('starter.services', [])
 
+.factory('Shopping', function($firebaseArray) {
+  var ref = new Firebase('http://shopping506.firebaseio.com/');
+  
+  var purchase = function(id){
+    ref.child(id).child('status').set('purchased');
+  };
+
+  return {
+    list: $firebaseArray(ref),
+    purchase: purchase
+  };
+})
+
 .factory('Chats', function() {
   // Might use a resource here that returns a JSON array
 

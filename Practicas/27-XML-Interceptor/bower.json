@@ -1,0 +1,22 @@
+{
+  "name": "27-XML-Interceptor",
+  "homepage": "https://github.com/ireneAraya/PWI",
+  "authors": [
+    "Irene Araya <iarayal>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#~1.4.8",
+    "angular-xml": "~2.2.1"
+  }
+}

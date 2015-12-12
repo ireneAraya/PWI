@@ -5,6 +5,8 @@ body{
 
 ol, ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 img{
@@ -73,9 +75,66 @@ height: auto
   }
   .navbar-nav{
     margin-top: 20px;
-  } 
-  
-  .nav .navbar-nav .social li{
-    float: left;
   }
+
+  .nav .navbar-nav .social li{
+  float: left;
+  }
+
+}  
+
+.slider-container{
+  margin-top: 30px;
 }
+
+.slide{
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.no-padding{
+  padding: 0 !important;
+}
+
+.left-slide{
+  margin-right: 25px;
+}
+
+.design-slider{
+  
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  width: 410px; 
+  height: 420px;
+  margin: 0 auto;
+  padding-top:40%;
+  background: #006280;
+  font-size: 70px;
+  color: #ecf0f1;
+}
+
+.contact-page h3{
+  padding-top: 30px;
+  color: #F47A20;
+}
+
+.about{
+  border-right: solid 1px #2c3e50;
+}
+
+.photo-show, .design-show{
+  margin-top: 40px;
+}
+
+.photo, .design{
+  padding-bottom: 25px;
+}
+
+footer{
+  margin-top: 30px;
+}
+
+

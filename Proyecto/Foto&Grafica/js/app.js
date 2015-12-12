@@ -1,9 +1,10 @@
-var app = angular.module('fotografica', ['ngRoute']);
+var app = angular.module('fotografica', ['ngRoute','fotografica.controllers'])
 app.config(['$routeProvider', function($routeProvider) {
 	$routeProvider
 
 	.when('/', {
-		templateUrl: 'views/home.html'
+		templateUrl: 'views/home.html',
+		controller: 'HomeController'
 	})
 	.when('/design', {
 		templateUrl: 'views/design.html'
@@ -16,9 +17,6 @@ app.config(['$routeProvider', function($routeProvider) {
 	})
 	.when('/store', {
 		templateUrl: 'views/store.html'
-	})
-	.when('/blog', {
-		templateUrl: 'views/blog.html'
 	})
 	.otherwise({
 		redirectTo: '/'
