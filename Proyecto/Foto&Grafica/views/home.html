@@ -1,49 +1,68 @@
 <div class="row slider-container" ng-controller="HomeController">
 	<div class="col-xs-7 no-padding">
 		<ul class="pull-right">
-			<li class="slide left-slide">
-				<a href="#/design" ng-mouseenter="Design=false" ng-mouseleave="Design=true" class="design-slider">
-					<simple-slider style="width: 410px; height: 420px;" ng-show='Design'>
-						<img src="img/ardilla1.jpg" class="img-responsive">
-						<img src="img/emma1.jpg" class="img-responsive">
+			<li id="design-slide" class="left-slide">
+				<a href="#/design" ng-mouseover="designShow()" ng-mouseleave="designHide()">
+					<simple-slider class="slide img-responsive">
+						<img src="img/ardilla1.jpg">
+						<img src="img/emma1.jpg">
+						<img src="img/sele1.jpg">
 					</simple-slider>
-					<span class="overlay text-center">Diseño</span>
+					<div class="color-block" ng-show="hoverDesign">
+						<h2 class="link-name text-center">Diseño</h2>
+					</div>
 				</a>
 			</li>
-			<li class="slide left-slide">
-				<a href="#/photo">
-					<simple-slider style="width: 410px; height: 255px;">
+			<li id="photo-slide" class="left-slide">
+				<a href="#/photo" ng-mouseover="photoShow()" ng-mouseleave="photoHide()">
+					<simple-slider class="slide img-responsive">
 						<img src="img/ardilla2.jpg">
 						<img src="img/emma2.jpg">
+						<img src="img/sele2.jpg">
 					</simple-slider>
+					<div class="color-block" ng-show="hoverPhoto">
+						<h2 class="link-name text-center">Fotografía</h2>
+					</div>
 				</a>
 			</li>
 		</ul>
 	</div>
 	<div class="col-xs-5 no-padding">
 		<ul>
-			<li class="slide">
-				<a href="#/contact">
-					<simple-slider style="width: 265px; height: 170px;">
+			<li id="contact-slide">
+				<a href="#/contact" ng-mouseover="contactShow()" ng-mouseleave="contactHide()">
+					<simple-slider class="slide img-responsive">
 						<img src="img/ardilla3.jpg">
 						<img src="img/emma3.jpg">
+						<img src="img/sele3.jpg">
 					</simple-slider>
+					<div class="color-block" ng-show="hoverContact">
+						<h2 class="link-name text-center">Contacto</h2>
+					</div>
 				</a>
 			</li>
-			<li class="slide">
-				<a href="#/blog">
-					<simple-slider style="width: 265px; height: 315px;">
+			<li id="blog-slide">
+				<a href="#/blog" ng-mouseover="blogShow()" ng-mouseleave="blogHide()">
+					<simple-slider class="slide img-responsive">
 						<img src="img/ardilla4.jpg">
 						<img src="img/emma4.jpg">
+						<img src="img/sele4.jpg">
 					</simple-slider>
+					<div class="color-block" ng-show="hoverBlog">
+						<h2 class="link-name text-center">Blog</h2>
+					</div>
 				</a>
 			</li>
-			<li class="slide">
+			<li id="store-slide" ng-mouseover="storeShow()" ng-mouseleave="storeHide()">
 				<a href="#/store">
-					<simple-slider style="width: 265px; height: 165px;">
+					<simple-slider class="slide img-responsive">
 						<img src="img/ardilla5.jpg">
 						<img src="img/emma5.jpg">
+						<img src="img/sele5.jpg">
 					</simple-slider>
+					<div class="color-block" ng-show="hoverStore">
+						<h2 class="link-name text-center">Tienda</h2>
+					</div>
 				</a>
 			</li>
 		</ul>

@@ -1,0 +1,62 @@
+.button-float{
+  	background: white !important;
+  	border-radius: 80% !important; 
+}
+
+.button-float, .check-button{
+  	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26) !important;
+}
+
+.button-float, .check-button, .up-button{
+  	background: white !important;
+  	z-index: 12 !important;
+  	position: absolute !important;
+  	border: 0;
+}
+
+.video-button, .photo-button, .check-button{
+	bottom: 40px !important;
+}
+
+.video-button{
+  	right: 80px !important;
+}
+
+.photo-button{
+  	right: 140px !important;
+}
+
+.custom-icon{
+	font-size: 30px;
+	color: #7f8c8d;
+	padding-top: 10px;
+	padding-right: 10px;
+}
+
+.custom-icon:hover{
+	color:#2980b9;
+}
+
+.check-button{
+	background: #27ae60 !important;
+  	right: 20px !important;
+  	border-radius: 80% !important;
+}
+
+.check-icon{
+	font-size: 30px;
+	color: white;
+	padding-top: 20px;
+	padding-right: 10px;
+}
+
+.up-button{
+	bottom: 30px !important;
+  	right: 20px !important;
+}
+
+.list-text{
+	color: #7f8c8d;
+	padding-top: 8%;
+}
+

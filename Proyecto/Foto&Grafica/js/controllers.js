@@ -2,25 +2,44 @@ var controllers = angular.module ('fotografica.controllers', [])
 
 controllers.controller('HomeController', ['$scope' ,function($scope) {
 
-	$scope.designSlides = [
-            {image1: 'img/ardilla1.jpg', description: 'Ardilla'},
-            {image2: 'img/emma1.jpg', description: 'Bebé'}
-        ];
-    $scope.photoSlides = [
-            {image: 'img/ardilla2.jpg', description: 'Ardilla'},
-            {image: 'img/emma2.jpg', description: 'Bebé'}
-        ];
-    $scope.contactSlides = [
-            {image: 'img/ardilla3.jpg', description: 'Ardilla'},
-            {image: 'img/emma3.jpg', description: 'Bebé'}
-        ];
-    $scope.blogSlides = [
-            {image: 'img/ardilla4.jpg', description: 'Ardilla'},
-            {image: 'img/emma4.jpg', description: 'Bebé'}
-        ];
-    $scope.storeSlides = [
-            {image: 'img/ardilla5.jpg', description: 'Ardilla'},
-            {image: 'img/emma5.jpg', description: 'Bebé'}
-        ];
+	$scope.designShow = function(){
+        $scope.hoverDesign = true;
+    };
+
+    $scope.designHide = function(){
+        $scope.hoverDesign = false;
+    };
+
+    $scope.photoShow = function(){
+        $scope.hoverPhoto = true;
+    };
+
+    $scope.photoHide = function(){
+        $scope.hoverPhoto = false;
+    };
+
+    $scope.contactShow = function(){
+        $scope.hoverContact = true;
+    };
+
+    $scope.contactHide = function(){
+        $scope.hoverContact = false;
+    };
+
+    $scope.blogShow = function(){
+        $scope.hoverBlog = true;
+    };
+
+    $scope.blogHide = function(){
+        $scope.hoverBlog = false;
+    };
+
+    $scope.storeShow = function(){
+        $scope.hoverStore = true;
+    };
+
+    $scope.storeHide = function(){
+        $scope.hoverStore = false;
+    };
                   
 }]);

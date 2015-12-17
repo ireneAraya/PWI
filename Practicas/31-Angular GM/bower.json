@@ -1,0 +1,21 @@
+{
+  "name": "31-Angular GM",
+  "homepage": "https://github.com/ireneAraya/PWI",
+  "authors": [
+    "Irene Araya <iarayal>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-google-maps": "~2.2.1"
+  }
+}

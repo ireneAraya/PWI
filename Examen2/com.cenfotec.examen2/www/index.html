@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+  </head>
+  <body ng-app="segundoExamen">
+
+    <ion-pane>
+      <ion-header-bar class="bar bar-header bar-stable">
+        <h4 class="title">PWI Examen 2</h4>
+      </ion-header-bar>
+      <ion-content class="has-header">
+        <div class="list card">
+
+          <div class="item item-image">
+            <img src="img/photos.png">
+          </div>
+
+          <button class="button-float video-button">
+            <i class="icon ion-videocamera custom-icon"></i>
+          </button>
+          <button class="button-float photo-button">
+            <i class="icon ion-camera custom-icon"></i>
+          </button>
+          <button class="button-float check-button">
+            <i class="icon ion-checkmark check-icon"></i>
+          </button>
+
+          <div class="item" href="#">
+           <p>Párrafo aquí</p>
+          </div>
+        </div>
+
+        <div class="list">
+
+          <a class="item item-thumbnail-left list-text" href="#">
+            <img src="img/photos.png">
+            <h3>Photo Name</h3>
+            <p>date&time</p>
+            <i class="icon ion-chevron-up custom-icon up-button"></i>
+          </a>
+
+        </div>
+      </ion-content>
+    </ion-pane>
+  </body>
+</html>
