@@ -1,3 +1,7 @@
+.bigPhoto{
+	width: 500%;
+}
+
 .button-float{
   	background: white !important;
   	border-radius: 80% !important; 
@@ -29,7 +33,7 @@
 .custom-icon{
 	font-size: 30px;
 	color: #7f8c8d;
-	padding-top: 10px;
+	padding-top: 20px;
 	padding-right: 10px;
 }
 
@@ -38,15 +42,19 @@
 }
 
 .check-button{
-	background: #27ae60 !important;
+	background: #2ecc71 !important;
   	right: 20px !important;
   	border-radius: 80% !important;
+}
+
+.check-button:hover{
+	background: #27ae60 !important;
 }
 
 .check-icon{
 	font-size: 30px;
 	color: white;
-	padding-top: 20px;
+	padding-top: 30px;
 	padding-right: 10px;
 }
 

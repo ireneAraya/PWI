@@ -9,9 +9,9 @@ angular.module('starter.controllers', [])
     },
     {
       quality: 75,
-      targetWidth: 300,
-      targetHeight: 300,
-      allowEdit: true
+      targetWidth: 350,
+      targetHeight: 350,
+      allowEdit : true
     }
     );
   };

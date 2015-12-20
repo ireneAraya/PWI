@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title></title>
+    <title>PWI Examen 2</title>
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -17,49 +17,51 @@
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
+    
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
   </head>
-  <body ng-app="segundoExamen">
+  <body ng-app="segundoExamen" ng-controller="ExamenController">
 
     <ion-pane>
       <ion-header-bar class="bar bar-header bar-stable">
         <h4 class="title">PWI Examen 2</h4>
       </ion-header-bar>
-      <ion-content class="has-header">
+      <ion-content class="has-header padding">
         <div class="list card">
 
           <div class="item item-image">
-            <img src="img/photos.png">
+            <img ng-show="imgURI !== undefined" id="image">
           </div>
 
           <button class="button-float video-button">
             <i class="icon ion-videocamera custom-icon"></i>
           </button>
-          <button class="button-float photo-button">
+          <button class="button-float photo-button" ng-click="getPhoto()">
             <i class="icon ion-camera custom-icon"></i>
           </button>
-          <button class="button-float check-button">
+          <button class="button-float check-button" ng-click="postPhoto()">
             <i class="icon ion-checkmark check-icon"></i>
           </button>
 
           <div class="item" href="#">
-           <p>Párrafo aquí</p>
+           <p>P&#xE1;rrafo Aqui</p>
           </div>
         </div>
 
-        <div class="list">
-
-          <a class="item item-thumbnail-left list-text" href="#">
-            <img src="img/photos.png">
-            <h3>Photo Name</h3>
-            <p>date&time</p>
-            <i class="icon ion-chevron-up custom-icon up-button"></i>
-          </a>
-
-        </div>
+        <ion-list>
+          <ion-item ng-repeat="image in images">
+            <a class="item item-thumbnail-left list-text" href="#">
+              <img ng-src="{{image.src}}">
+              <h3>{{image.name}}</h3>
+              <p>{{image.date}}</p>
+              <i class="icon ion-chevron-up custom-icon up-button"></i>
+            </a>
+          </ion-item>
+        </ion-list>
       </ion-content>
     </ion-pane>
   </body>
